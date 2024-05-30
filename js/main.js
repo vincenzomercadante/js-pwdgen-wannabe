@@ -1,19 +1,19 @@
-// dichiarazione e assegnazioni delle variabili e costanti
-const pagetitle = document.getElementById("userpsw");
-const currentyear = '23';
 
-let userName = prompt("Inserisci qui il tuo Nome");
-console.log(userName);
+const pageTitle = document.getElementById("userpsw");
+const currentYear = '23';
 
-let userSurname = prompt("Inserisci qui il tuo Cognome");
-console.log(userSurname);
+// user's name
+const userName = prompt("Inserisci qui il tuo Nome");
 
-let userColor = prompt("Inserisci qui il tuo colore preferito");
-console.log(userColor);
+// user's surname
+const userSurname = prompt("Inserisci qui il tuo Cognome");
 
-// dichiarazione e creazione password
-let password = userName + userSurname + userColor + currentyear;
-console.log(password);
+// user's favourite color
+const userColor = prompt("Inserisci qui il tuo colore preferito");
 
-//stampiamo sulla pagina la password appena generata 
+// password creation
+const password = userName + userSurname + userColor + currentyear;
+
+
+// printing generated password on page 
 pagetitle.innerHTML = `La tua password è: <mark>${password}</mark>`;
